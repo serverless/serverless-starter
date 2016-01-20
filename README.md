@@ -4,11 +4,11 @@ A boilerplate for new Serverless Projects
 
 ##Install
 
-* Run
+* Install using the [Serverless Framework](http://www.serverless.com):
 ```
 serverless install serverless-starter
 ```
-* Go into each component and run
+* Go into each component in the project and install dependencies with:
 ```
 npm install
 ```
