@@ -4,22 +4,24 @@ A boilerplate for new Serverless Projects
 
 ##Install
 
-Install using the [Serverless Framework](http://www.serverless.com):
+* Run
 ```
 serverless install serverless-starter
 ```
-Go into each component in the project and install dependencies with:
+* Go into each component and run
 ```
 npm install
 ```
-Deploy your endpoints with
+* Deploy your endpoints with
 ```
 serverless dash deploy
 ```
 
-##Examples
+##Includes
 
-This contains the following examples:
+This project contains the following:
 
 * **Multi:** A Serverless module with multiple functions each containing a single endpoint
 * **Single:** A Serverless module with a single function that uses multiple endpoints.
+* **Optimizer Plugin:**  Each function is automatically optimized via the [serverless-optimizer-plugin](https://www.github.com/serverless/serverless-optimizer-plugin)
+* **Module Templates:** The "single" module contains a simple example of using Serverless Templates to reduce configuration.
