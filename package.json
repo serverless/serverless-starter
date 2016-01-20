@@ -1,5 +1,5 @@
 {
-  "name": “s-test-prj”,
+  "name": "serverless-starter",
   "version": "0.0.1",
   "description": "A Serverless Project and its Serverless Plugin dependencies.",
   "author": "me",
