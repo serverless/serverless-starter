@@ -6,7 +6,7 @@ A boilerplate for new Serverless Projects
 
 Install using the [Serverless Framework](http://www.serverless.com):
 ```
-serverless install serverless-starter
+serverless project install serverless-starter
 ```
 Go into each project component and install its dependencies via npm:
 ```
