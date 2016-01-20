@@ -4,15 +4,15 @@ A boilerplate for new Serverless Projects
 
 ##Install
 
-* Install using the [Serverless Framework](http://www.serverless.com):
+Install using the [Serverless Framework](http://www.serverless.com):
 ```
 serverless install serverless-starter
 ```
-* Go into each component in the project and install dependencies with:
+Go into each component in the project and install dependencies with:
 ```
 npm install
 ```
-* Deploy your endpoints with
+Deploy your endpoints with
 ```
 serverless dash deploy
 ```
