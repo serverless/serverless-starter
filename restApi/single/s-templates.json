@@ -1,7 +1,13 @@
 {
   "singleRequestTemplate": {
     "application/json": {
-      "httpMethod": "$context.httpMethod"
+      "httpMethod": "$context.httpMethod",
+      "body": "$input.json('$')",
+      "pathParams" : "$input.params().path",
+      "queryParams" : "$input.params().querystring",
+      "headerParams" : "$input.params().header",
+      "headerParamNames" : "$input.params().header.keySet()",
+      "contentTypeValue" : "$input.params().header.get('Content-Type')"
     }
   }
 }
