@@ -6,7 +6,8 @@
   "memorySize": 1024,
   "custom": {
     "excludePatterns": [],
-    "envVars": []
+    "envVars": [],
+    "optimize": true
   },
   "endpoints": [
     {

@@ -7,7 +7,7 @@
   "custom": {
     "excludePatterns": [],
     "envVars": [],
-    "optimize": false
+    "optimize": true
   },
   "endpoints": [
     {
