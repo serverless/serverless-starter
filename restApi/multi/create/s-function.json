@@ -1,17 +1,16 @@
 {
-  "name": "show",
-  "handler": "users/show/handler.handler",
+  "name": "create",
+  "handler": "multi/create/handler.handler",
   "runtime": "nodejs",
   "timeout": 6,
-  "memorySize": 256,
+  "memorySize": 1024,
   "custom": {
     "excludePatterns": [],
-    "envVars": [],
-    "optimize": false
+    "envVars": []
   },
   "endpoints": [
     {
-      "path": "users/show",
+      "path": "users/create",
       "method": "GET",
       "authorizationType": "none",
       "apiKeyRequired": false,

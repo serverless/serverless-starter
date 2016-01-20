@@ -1,0 +1,7 @@
+{
+  "singleRequestTemplate": {
+    "application/json": {
+      "httpMethod": "$context.httpMethod"
+    }
+  }
+}
