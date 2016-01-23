@@ -4,7 +4,12 @@ A boilerplate for new Serverless Projects.  This is full of useful examples and 
 
 ##Install
 
-Install using the [Serverless Framework](http://www.serverless.com):
+Make sure you have the [Serverless Framework](http://www.serverless.com) installed and you're using Node V4
+```
+npm install serverless -g
+```
+
+Install the project using Serverless:
 ```
 serverless project install serverless-starter
 ```
