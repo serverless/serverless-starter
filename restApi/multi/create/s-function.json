@@ -11,7 +11,7 @@
   },
   "endpoints": [
     {
-      "path": "users/create",
+      "path": "multi/create",
       "method": "GET",
       "authorizationType": "none",
       "apiKeyRequired": false,

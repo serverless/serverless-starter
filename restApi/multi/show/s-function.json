@@ -11,7 +11,7 @@
   },
   "endpoints": [
     {
-      "path": "users/show/{id}",
+      "path": "multi/show/{id}",
       "method": "GET",
       "authorizationType": "none",
       "apiKeyRequired": false,
