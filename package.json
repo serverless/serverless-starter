@@ -1,6 +1,6 @@
 {
   "name": "serverless-starter",
-  "version": "0.0.8",
+  "version": "0.1.0",
   "description": "A Serverless Project and its Serverless Plugin dependencies.",
   "author": "me",
   "license": "MIT",
