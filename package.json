@@ -10,6 +10,6 @@
     "url": "git://github.com/"
   },
   "dependencies": {
-    "serverless-optimizer-plugin": "^0.1.0"
+    "serverless-optimizer-plugin": "^1.0.0"
   }
 }
