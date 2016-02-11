@@ -1,6 +1,6 @@
 {
-  "name": "all",
-  "handler": "single/all/handler.handler",
+  "name": "single",
+  "handler": "single/handler.handler",
   "runtime": "nodejs",
   "timeout": 6,
   "memorySize": 1024,
@@ -11,7 +11,7 @@
   },
   "endpoints": [
     {
-      "path": "single/all",
+      "path": "single",
       "method": "GET",
       "authorizationType": "none",
       "apiKeyRequired": false,
@@ -31,7 +31,7 @@
       }
     },
     {
-      "path": "single/all",
+      "path": "single",
       "method": "PUT",
       "authorizationType": "none",
       "apiKeyRequired": false,
@@ -51,7 +51,7 @@
       }
     },
     {
-      "path": "single/all",
+      "path": "single",
       "method": "POST",
       "authorizationType": "none",
       "apiKeyRequired": false,
@@ -71,7 +71,7 @@
       }
     },
     {
-      "path": "single/all",
+      "path": "single",
       "method": "DELETE",
       "authorizationType": "none",
       "apiKeyRequired": false,
