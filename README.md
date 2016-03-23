@@ -1,5 +1,7 @@
 #Serverless Starter
 
+[![serverless](http://public.serverless.com/badges/v3.svg)](http://www.serverless.com)
+
 A boilerplate for new Serverless Projects.  This is full of useful examples and we add more on a regular basis.
 
 ##Install
