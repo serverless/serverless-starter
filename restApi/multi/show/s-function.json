@@ -1,9 +1,13 @@
 {
   "name": "show",
-  "handler": "multi/show/handler.handler",
   "runtime": "nodejs",
+  "description": "Serverless Lambda function for project: serverless-starter",
+  "customName": false,
+  "customRole": false,
+  "handler": "multi/show/handler.handler",
   "timeout": 6,
   "memorySize": 256,
+  "authorizer": {},
   "custom": {
     "excludePatterns": [],
     "envVars": [],
@@ -13,7 +17,9 @@
     {
       "path": "multi/show/{id}",
       "method": "GET",
+      "type": "AWS",
       "authorizationType": "none",
+      "authorizerFunction": false,
       "apiKeyRequired": false,
       "requestParameters": {},
       "requestTemplates": "$${apiRequestTemplate}",
@@ -30,5 +36,15 @@
         }
       }
     }
-  ]
+  ],
+  "events": [],
+  "environment": {
+    "SERVERLESS_PROJECT": "serverless-starter",
+    "SERVERLESS_STAGE": "${stage}",
+    "SERVERLESS_REGION": "${region}"
+  },
+  "vpc": {
+    "securityGroupIds": [],
+    "subnetIds": []
+  }
 }

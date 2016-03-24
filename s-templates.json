@@ -3,10 +3,10 @@
     "application/json": {
       "httpMethod": "$context.httpMethod",
       "body": "$input.json('$')",
-      "queryParams" : "$input.params().querystring",
-      "headerParams" : "$input.params().header",
-      "headerParamNames" : "$input.params().header.keySet()",
-      "contentTypeValue" : "$input.params().header.get('Content-Type')"
+      "queryParams": "$input.params().querystring",
+      "headerParams": "$input.params().header",
+      "headerParamNames": "$input.params().header.keySet()",
+      "contentTypeValue": "$input.params().header.get('Content-Type')"
     }
   }
 }

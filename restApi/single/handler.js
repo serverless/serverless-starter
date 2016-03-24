@@ -7,9 +7,6 @@
  * - 'serverless-helpers-js' module is required for Serverless ENV var support.  Hopefully, AWS will add ENV support to Lambda soon :)
  */
 
-// Require Serverless ENV vars
-var ServerlessHelpers = require('serverless-helpers-js').loadEnv();
-
 // Require Logic
 var lib = require('../lib');
 

@@ -1,9 +1,13 @@
 {
   "name": "single",
-  "handler": "single/handler.handler",
   "runtime": "nodejs",
+  "description": "Serverless Lambda function for project: serverless-starter",
+  "customName": false,
+  "customRole": false,
+  "handler": "single/handler.handler",
   "timeout": 6,
   "memorySize": 1024,
+  "authorizer": {},
   "custom": {
     "excludePatterns": [],
     "envVars": [],
@@ -13,7 +17,9 @@
     {
       "path": "single",
       "method": "GET",
+      "type": "AWS",
       "authorizationType": "none",
+      "authorizerFunction": false,
       "apiKeyRequired": false,
       "requestParameters": {},
       "requestTemplates": "$${apiRequestTemplate}",
@@ -33,7 +39,9 @@
     {
       "path": "single",
       "method": "PUT",
+      "type": "AWS",
       "authorizationType": "none",
+      "authorizerFunction": false,
       "apiKeyRequired": false,
       "requestParameters": {},
       "requestTemplates": "$${apiRequestTemplate}",
@@ -53,7 +61,9 @@
     {
       "path": "single",
       "method": "POST",
+      "type": "AWS",
       "authorizationType": "none",
+      "authorizerFunction": false,
       "apiKeyRequired": false,
       "requestParameters": {},
       "requestTemplates": "$${apiRequestTemplate}",
@@ -73,7 +83,9 @@
     {
       "path": "single",
       "method": "DELETE",
+      "type": "AWS",
       "authorizationType": "none",
+      "authorizerFunction": false,
       "apiKeyRequired": false,
       "requestParameters": {},
       "requestTemplates": "$${apiRequestTemplate}",
@@ -90,5 +102,15 @@
         }
       }
     }
-  ]
+  ],
+  "events": [],
+  "environment": {
+    "SERVERLESS_PROJECT": "serverless-starter",
+    "SERVERLESS_STAGE": "${stage}",
+    "SERVERLESS_REGION": "${region}"
+  },
+  "vpc": {
+    "securityGroupIds": [],
+    "subnetIds": []
+  }
 }

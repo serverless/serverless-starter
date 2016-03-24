@@ -1,15 +1,15 @@
 {
   "name": "serverless-starter",
   "version": "0.2.0",
-  "description": "A Serverless Project and its Serverless Plugin dependencies.",
-  "author": "me",
+  "description": "A bare bones Serverless Framework project with examples for common use cases.",
+  "author": "Serverless.com",
   "license": "MIT",
   "private": false,
   "repository": {
     "type": "git",
-    "url": "git://github.com/"
+    "url": "https://github.com/serverless/serverless-starter.git"
   },
   "dependencies": {
-    "serverless-optimizer-plugin": "^1.0.0"
+    "serverless-optimizer-plugin": "^2.0.0"
   }
 }
