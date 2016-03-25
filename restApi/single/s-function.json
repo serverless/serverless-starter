@@ -105,7 +105,7 @@
   ],
   "events": [],
   "environment": {
-    "SERVERLESS_PROJECT": "serverless-starter",
+    "SERVERLESS_PROJECT": "${project}",
     "SERVERLESS_STAGE": "${stage}",
     "SERVERLESS_REGION": "${region}"
   },
