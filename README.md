@@ -38,7 +38,7 @@ This project contains the following:
 
 ##Alternative Install
 
-If issues arise during installation, the steps below can be taken to install the project and initialize it. This is the equivalent to the `serverless`
+If issues arise during installation, the steps below can be taken to install the project and initialize it.
 
 Open a command line terminal and `cd` to the location where you will be placing the serverless-starter project.
 
