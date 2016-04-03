@@ -35,3 +35,34 @@ This project contains the following:
 * **Optimizer Plugin:**  Each function is automatically optimized via the [serverless-optimizer-plugin](https://www.github.com/serverless/serverless-optimizer-plugin)
 * **Templates:** Templates are used to reduce configuraton syntax
 * **REST API Parameters:** The Multi/Show function endpoint gives an example of how to accept a path parameter
+
+##Alternative Install
+
+If issues arise during installation, the steps below can be taken to install the project and initialize it. This is the equivalent to the `serverless`
+
+Open a command line terminal and `cd` to the location where you will be placing the serverless-starter project.
+
+Clone the project directly from Github:
+```
+git clone https://github.com/serverless/serverless-starter.git
+```
+
+Enter the serverless-starter folder that was just created:
+```
+cd serverless-starter
+```
+
+Install all npm dependencies:
+```
+npm install
+```
+
+Initialize the project:
+```
+serverless project init
+```
+
+Deploy your functions and endpoints:
+```
+serverless dash deploy
+```
