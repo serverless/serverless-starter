@@ -34,6 +34,13 @@
           "application/json": ""
         }
       }
+    },
+    {
+      "path": "/show/{id}",
+      "method": "OPTIONS",
+      "type": "MOCK",
+      "requestTemplates": "$${apiCorsRequestTemplate}",
+      "responses": "$${apiCorsOptionsResponse}"
     }
   ],
   "events": [],
