@@ -10,7 +10,6 @@
   "authorizer": {},
   "custom": {
     "excludePatterns": [],
-    "envVars": [],
     "optimize": true
   },
   "endpoints": [
@@ -101,6 +100,13 @@
           "application/json": ""
         }
       }
+    },
+    {
+      "path": "single",
+      "method": "OPTIONS",
+      "type": "MOCK",
+      "requestTemplates": "$${apiCorsRequestTemplate}",
+      "responses": "$${apiCorsOptionsResponse}"
     }
   ],
   "events": [],
