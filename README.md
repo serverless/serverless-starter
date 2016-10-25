@@ -4,65 +4,65 @@
 
 A bare bones Serverless Framework project with examples for common use cases.
 
-##Install
-
-Make sure you have the [Serverless Framework](http://www.serverless.com) installed and you're using Node.js v4.0+. 
-```
-npm install serverless -g
-```
-
-Install the project using Serverless:
-```
-serverless project install serverless-starter
-```
-
-Install project dependencies via npm:
-```
-npm install
-```
-
-Deploy your functions and endpoints:
-```
-serverless dash deploy
-```
-
-##Includes
-
 This project contains the following:
 
-* **Multi:** Multiple functions each containing a single endpoint
 * **Single:** A single function that uses multiple endpoints.
-* **Optimizer Plugin:**  Each function is automatically optimized via the [serverless-optimizer-plugin](https://www.github.com/serverless/serverless-optimizer-plugin)
-* **Templates:** Templates are used to reduce configuration syntax
-* **REST API Parameters:** The Multi/Show function endpoint gives an example of how to accept a path parameter
+* **Multi:** Multiple functions each containing a single endpoint.
+* **REST API Parameters:** The Multi/Show function endpoint gives an example of how to accept a path parameter.
 
-##Alternative Install
+##Prerequisites
 
-If issues arise during installation, the steps below can be taken to install the project and initialize it.
+- [Serverless Framework v1.0+](https://serverless.com/)
+- [Nodejs v4.3+](https://nodejs.org/)
+- [Setup your AWS credentials](https://serverless.com/framework/docs/providers/aws/guide/credentials/)
 
-Open a command line terminal and `cd` to the location where you will be placing the serverless-starter project.
+##Installation
 
-Clone the project directly from Github:
+Clone the project from GitHub:
 ```
 git clone https://github.com/serverless/serverless-starter.git
 ```
 
-Enter the serverless-starter folder that was just created:
+Enter the newly created folder:
 ```
 cd serverless-starter
 ```
 
-Install all npm dependencies:
-```
-npm install
-```
-
-Initialize the project:
-```
-serverless project init
-```
-
 Deploy your functions and endpoints:
 ```
-serverless dash deploy
+serverless deploy
+```
+
+##Testing with Curl
+
+Use the following commands to test your newly created endpoints.
+
+Note: You must replace the URLs in the examples below with those which are displayed after deploying. You can use the `serverless info` command to display the URLs if they are no longer on your screen.
+
+Call the "single" endpoint using the GET method.
+```
+curl -X GET https://XXXXXXXXXX.execute-api.us-east-1.amazonaws.com/dev/single
+```
+
+Call the "single" endpoint using the POST method.
+```
+curl -X POST https://XXXXXXXXXX.execute-api.us-east-1.amazonaws.com/dev/single
+```
+
+Call the "multi/create" endpoint using the GET method.
+```
+curl -X GET https://XXXXXXXXXX.execute-api.us-east-1.amazonaws.com/dev/multi/create
+```
+
+Call the "multi/show" endpoint using the GET method and specifying an id path parameter of "42".
+```
+curl -X GET https://XXXXXXXXXX.execute-api.us-east-1.amazonaws.com/dev/multi/show/42
+```
+
+##Removal
+
+Once you're all done with the serverless-starter project, use the following command to remove the project from AWS completely.
+
+```
+serverless remove
 ```

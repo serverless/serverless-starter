@@ -1,6 +1,6 @@
 {
   "name": "serverless-starter",
-  "version": "0.2.1",
+  "version": "1.0.3",
   "description": "A bare bones Serverless Framework project with examples for common use cases.",
   "author": "Serverless.com",
   "license": "MIT",
@@ -10,6 +10,5 @@
     "url": "https://github.com/serverless/serverless-starter.git"
   },
   "dependencies": {
-    "serverless-optimizer-plugin": "^2.0.0"
   }
 }
