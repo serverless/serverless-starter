@@ -1,4 +1,4 @@
-#Serverless Starter
+# Serverless Starter
 
 [![serverless](http://public.serverless.com/badges/v3.svg)](http://www.serverless.com)
 
@@ -10,13 +10,13 @@ This project contains the following:
 * **Multi:** Multiple functions each containing a single endpoint.
 * **REST API Parameters:** The Multi/Show function endpoint gives an example of how to accept a path parameter.
 
-##Prerequisites
+## Prerequisites
 
 - [Serverless Framework v1.0+](https://serverless.com/)
 - [Nodejs v4.3+](https://nodejs.org/)
 - [Setup your AWS credentials](https://serverless.com/framework/docs/providers/aws/guide/credentials/)
 
-##Installation
+## Installation
 
 Clone the project from GitHub:
 ```
@@ -33,7 +33,7 @@ Deploy your functions and endpoints:
 serverless deploy
 ```
 
-##Testing with Curl
+## Testing with Curl
 
 Use the following commands to test your newly created endpoints.
 
@@ -59,7 +59,7 @@ Call the "multi/show" endpoint using the GET method and specifying an id path pa
 curl -X GET https://XXXXXXXXXX.execute-api.us-east-1.amazonaws.com/dev/multi/show/42
 ```
 
-##Removal
+## Removal
 
 Once you're all done with the serverless-starter project, use the following command to remove the project from AWS completely.
 
